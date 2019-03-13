@@ -1,6 +1,6 @@
 # pxt-kitronik-robotics-board-calliope
 
-This is a copy of the original extension from Kitronik for the micro:bit:
+This is a copy of the original extension from Kitronik for the micro:bit with some few changes:
 
 # pxt-kitronik-robotics-board
 
