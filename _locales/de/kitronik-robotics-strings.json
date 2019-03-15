@@ -7,5 +7,5 @@
   "kitronik_robotics_all_off|block": "Alle Motoren ausschalten",
   "kitronik_set_stepper_steps|block": "%stepper|hat %steps|Schritte für eine volle Umdrehung",
   "kitronik_stepper_motor_turn_angle|block": "Drehe %stepper %dir|um|%angle|Grad",
-  "kitronik_stepper_motor_turn_steps|block": "Drehe %stepper %dir|um|%steps|Schritte",
+  "kitronik_stepper_motor_turn_steps|block": "Drehe %stepper %dir|um|%steps|Schritte"
 }
