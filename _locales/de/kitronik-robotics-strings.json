@@ -1,11 +1,12 @@
 {
-    "Kitronik_Robotics_Board.MotorDirection.Forward|block": "Vorwärts",
-    "Kitronik_Robotics_Board.MotorDirection.Reverse|block": "Rückwärts",
+    "MotorDirection.Forward|block": "Vorwärts",
+    "MotorDirection.Reverse|block": "Rückwärts",
     "Kitronik_Robotics_Board.kitronik_I2Cservo_write|block ": "schreibe Servo %Servo|auf %degrees",
     "Kitronik_Robotics_Board.kitronik_motor_on |block": "Motor %motor|in Richtung %dir|mit Geschwindigkeit %speed",
     "Kitronik_Robotics_Board.kitronik_motor_off|block": "Schalte Motor %motor| aus ",
     "Kitronik_Robotics_Board.kitronik_robotics_all_off|block": "Alle Motoren ausschalten",
     "Kitronik_Robotics_Board.kitronik_set_stepper_steps|block": "%stepper|hat %steps|Schritte für eine volle Umdrehung",
     "Kitronik_Robotics_Board.kitronik_stepper_motor_turn_angle|block": "Drehe %stepper %dir|um|%angle|Grad",
-    "Kitronik_Robotics_Board.kitronik_stepper_motor_turn_steps|block": "Drehe %stepper %dir|um|%steps|Schritte"
+    "Kitronik_Robotics_Board.kitronik_stepper_motor_turn_steps|block": "Drehe %stepper %dir|um|%steps|Schritte",
+    "{id:category}Robotics": "Robotik"
 }

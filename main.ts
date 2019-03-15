@@ -1,10 +1,62 @@
 /**
  * Blocks for driving the Kitronik All-in-one Robotics Board
  * MIT License by KITRONIK
- * changed for Calliope Mini by M. Klein 13.03.2019
+ * changed for Calliope Mini by M. Klein 15.03.2019
  */
+
+// List of servos for the servo block to use. These represent register offsets in the PCA9865 driver IC.
+enum Servos {
+    //% block="Servo 1"
+    Servo1 = 0x08,
+    //% block="Servo 2"
+    Servo2 = 0x0C,
+    //% block="Servo 3"
+    Servo3 = 0x10,
+    //% block="Servo 4"
+    Servo4 = 0x14,
+    //% block="Servo 5"
+    Servo5 = 0x18,
+    //% block="Servo 6"
+    Servo6 = 0x1C,
+    //% block="Servo 7"
+    Servo7 = 0x20,
+    //% block="Servo 8"
+    Servo8 = 0x24
+}
+
+// List of motors for the motor blocks to use. These represent register offsets in the PCA9865 driver IC.
+enum Motors {
+    //% block="Motor 1"
+    Motor1 = 0x28,
+    //% block="Motor 2"
+    Motor2 = 0x30,
+    //% block="Motor 3"
+    Motor3 = 0x38,
+    //% block="Motor 4"
+    Motor4 = 0x40
+}
+
+// List of stepper motors for the stepper motor blocks to use.
+// Stepper 1 would connect to Motor 1 & Motor 2
+// Stepper 2 would connect to Motor 3 & Motor 4
+enum StepperMotors {
+    //% block="Stepper 1"
+    Stepper1,
+    //% block="Stepper 2"
+    Stepper2
+}
+
+// Directions the motors can rotate.
+enum MotorDirection {
+    //% block="Forward"
+    Forward,
+    //% block="Reverse"
+    Reverse
+}
+
 //% weight=100 color=#00A654 icon="\uf1b6" block="Robotics"
 //% groups='["Servos", "Motors"]'
+
 namespace Kitronik_Robotics_Board {
     //Constants 
     let PRESCALE_REG = 0xFE //the prescale register address
@@ -17,55 +69,7 @@ namespace Kitronik_Robotics_Board {
     let SERVO_MULTIPLIER = 226
     let SERVO_ZERO_OFFSET = 0x66
 
-    // List of servos for the servo block to use. These represent register offsets in the PCA9865 driver IC.
-    export enum Servos {
-        //% block="Servo 1"
-        Servo1 = 0x08,
-        //% block="Servo 2"
-        Servo2 = 0x0C,
-        //% block="Servo 3"
-        Servo3 = 0x10,
-        //% block="Servo 4"
-        Servo4 = 0x14,
-        //% block="Servo 5"
-        Servo5 = 0x18,
-        //% block="Servo 6"
-        Servo6 = 0x1C,
-        //% block="Servo 7"
-        Servo7 = 0x20,
-        //% block="Servo 8"
-        Servo8 = 0x24
-    }
 
-    // List of motors for the motor blocks to use. These represent register offsets in the PCA9865 driver IC.
-    export enum Motors {
-        //% block="Motor 1"
-        Motor1 = 0x28,
-        //% block="Motor 2"
-        Motor2 = 0x30,
-        //% block="Motor 3"
-        Motor3 = 0x38,
-        //% block="Motor 4"
-        Motor4 = 0x40
-    }
-
-    // List of stepper motors for the stepper motor blocks to use.
-    // Stepper 1 would connect to Motor 1 & Motor 2
-    // Stepper 2 would connect to Motor 3 & Motor 4
-    export enum StepperMotors {
-        //% block="Stepper 1"
-        Stepper1,
-        //% block="Stepper 2"
-        Stepper2
-    }
-
-    // Directions the motors can rotate.
-    export enum MotorDirection {
-        //% block="Forward"
-        Forward,
-        //% block="Reverse"
-        Reverse
-    }
 
     // The Robotics board can be configured to use different I2C addresses, these are all listed here.
     // Board1 is the default value (set as the CHIP_ADDRESS)
@@ -414,27 +418,27 @@ namespace Kitronik_Robotics_Board {
             // This section uses the current stepStage and user selected Stepper Motor to set which Robotics Board Motor Output Address should be used
             if (stepStage == 1 || stepStage == 3) {
                 if (stepper == StepperMotors.Stepper1) {
-                    currentMotor = Kitronik_Robotics_Board.Motors.Motor1
+                    currentMotor = Motors.Motor1
                 }
                 else {
-                    currentMotor = Kitronik_Robotics_Board.Motors.Motor3
+                    currentMotor = Motors.Motor3
                 }
             }
             else {
                 if (stepper == StepperMotors.Stepper1) {
-                    currentMotor = Kitronik_Robotics_Board.Motors.Motor2
+                    currentMotor = Motors.Motor2
                 }
                 else {
-                    currentMotor = Kitronik_Robotics_Board.Motors.Motor4
+                    currentMotor = Motors.Motor4
                 }
             }
 
             // This section uses the current stepStage to set which direction the Robotics Board Motor Output should be driven
             if (stepStage == 1 || stepStage == 4) {
-                currentDirection = Kitronik_Robotics_Board.MotorDirection.Forward
+                currentDirection = MotorDirection.Forward
             }
             else {
-                currentDirection = Kitronik_Robotics_Board.MotorDirection.Reverse
+                currentDirection = MotorDirection.Reverse
             }
 
             // Function call for the Robotics Board motor drive with the previously set currentMotor and currentDirection
