@@ -1,5 +1,7 @@
 # pxt-kitronik-robotics-board-calliope
 
+[![Build Status](https://travis-ci.org/MKleinSB/pxt-kitronik-robotics-board-calliope.svg?branch=master)](https://travis-ci.org/MKleinSB/pxt-kitronik-robotics-board-calliope)
+
 This is a copy of the original extension from Kitronik for the micro:bit with some few changes:
 
 # pxt-kitronik-robotics-board
