@@ -166,7 +166,7 @@ namespace Kitronik_Robotics_Board {
     //% group=Servos
     //% subcategory=Servos
     //% blockId=kitronik_I2Cservo_write
-    //% block="set%Servo|to%degrees|degrees"
+    //% block="set %Servo|to %degrees|degrees"
     //% weight=100 blockGap=8
     //% degrees.min=0 degrees.max=180
     export function servoWrite(servo: Servos, degrees: number): void {
