@@ -4,6 +4,8 @@
 
 This is a copy of the original extension from Kitronik for the micro:bit with some few changes:
 
+![Youtube](https://www.youtube.com/watch?v=582I0-MQPyc&t=74s)
+
 # pxt-kitronik-robotics-board
 
 Custom blocks for www.kitronik.co.uk/5641 All-in-one Robotics Board for micro:bit
