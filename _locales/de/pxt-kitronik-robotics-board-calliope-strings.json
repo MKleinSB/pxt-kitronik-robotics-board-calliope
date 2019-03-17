@@ -5,7 +5,7 @@
     "Motors.Motor2|block": "Motor 2",
     "Motors.Motor3|block": "Motor 3",
     "Motors.Motor4|block": "Motor 4",
-    "Kitronik_Robotics_Board.servoWrite|block ": "schreibe %Servo|auf %degrees|Grad",
+    "Kitronik_Robotics_Board.servoWrite|block ": "Schreibe %Servo|auf %degrees|Grad",
     "Kitronik_Robotics_Board.motorOn|block": "%motor|in Richtung %dir|mit Geschwindigkeit %speed",
     "Kitronik_Robotics_Board.motorOff|block": "Schalte %motor| aus ",
     "Kitronik_Robotics_Board.allOff|block": "Alle Motoren ausschalten",
