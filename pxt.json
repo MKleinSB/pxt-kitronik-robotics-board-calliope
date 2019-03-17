@@ -1,6 +1,6 @@
 {
     "name": "pxt-kitronik-robotics-board-calliope",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "description": "Calliope Mini Makecode Extension für Kitronik robotics board + Callio:bit",
     "dependencies": {
         "core": "*",
