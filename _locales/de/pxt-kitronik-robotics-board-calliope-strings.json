@@ -10,7 +10,7 @@
     "Kitronik_Robotics_Board.motorOff|block": "Schalte %motor| aus ",
     "Kitronik_Robotics_Board.allOff|block": "Alle Motoren ausschalten",
     "Kitronik_Robotics_Board.setStepperMotorSteps|block": "%stepper|braucht %steps|Schritte für eine volle Umdrehung",
-    "Kitronik_Robotics_Board.stepperMotorTurnAngle|block": "Drehe %stepper| Richtung %dir|um|%angle|Grad",
+    "Kitronik_Robotics_Board.stepperMotorTurnAngle|block": "%stepper|drehen in %dir|%angle|Grad",
     "Kitronik_Robotics_Board.stepperMotorTurnSteps|block": "Drehe %stepper| Richtung %dir|um|%steps|Schritte",
     "{id:category}Robotics": "Robotik",
     "{id:subcategory}Servos": "Servos",
