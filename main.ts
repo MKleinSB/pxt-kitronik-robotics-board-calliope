@@ -1,7 +1,7 @@
 /**
  * Blocks for driving the Kitronik All-in-one Robotics Board
  * MIT License by KITRONIK
- * changed for Calliope Mini by M. Klein 15.03.2019
+ * changed for Calliope Mini by M. Klein 17.03.2019
  */
 
 // List of servos for the servo block to use. These represent register offsets in the PCA9865 driver IC.
