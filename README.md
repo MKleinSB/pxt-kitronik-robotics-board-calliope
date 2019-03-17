@@ -6,6 +6,9 @@ This is a copy of the original extension from Kitronik for the micro:bit with so
 
 ![Youtube](https://www.youtube.com/watch?v=582I0-MQPyc&t=74s)
 
+## Video
+[![click here to see the sample video](https://i.ytimg.com/vi/582I0-MQPyc/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAkDVZ0wBJt89pFBYYpwaKm0DjH7A)](https://www.youtube.com/watch?v=582I0-MQPyc&t=74s)
+
 # pxt-kitronik-robotics-board
 
 Custom blocks for www.kitronik.co.uk/5641 All-in-one Robotics Board for micro:bit
