@@ -158,9 +158,9 @@ namespace Kitronik_Robotics_Board {
 
     /**
      * Sets the requested servo to the reguested angle.
-	 * If the PCA has not yet been initialised calls the initialisation routine.
+     * If the PCA has not yet been initialised calls the initialisation routine.
      * @param servo Which servo to set
-	 * @param degrees the angle to set the servo to
+     * @param degrees the angle to set the servo to
      */
     //% group=Servos
     //% subcategory=Servos
