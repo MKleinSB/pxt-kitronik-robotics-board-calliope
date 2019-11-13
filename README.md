@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/MKleinSB/pxt-kitronik-robotics-board-calliope.svg?branch=master)](https://travis-ci.org/MKleinSB/pxt-kitronik-robotics-board-calliope)
 
-This is a copy of the original extension from Kitronik for the micro:bit with some few changes to fit with the Calliope Mini. I added german locale, too. Other translations are welcome!
+This is a copy of the original extension from Kitronik for the micro:bit (running over I2C) with some few changes to fit with the Calliope Mini. I added german locale, too. Other translations are welcome!
 
 ## Video
 [![click here to see the sample video](https://i.ytimg.com/vi/582I0-MQPyc/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAkDVZ0wBJt89pFBYYpwaKm0DjH7A)](https://www.youtube.com/watch?v=582I0-MQPyc&t=74s)
